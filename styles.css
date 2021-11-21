@@ -215,25 +215,19 @@ img {
   background-image: linear-gradient(to right, var(--black-color), var(--first-color));
 }
 
-.home__social {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.socialiconlol{
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  font-size: 1.4rem;
+  margin-bottom: 5%;
+  color: #000;
+}
+
+.socialiconlol .imglol{
+  width: 30px;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-bottom: 1rem;
-}
-
-.home__social-icon {
-  margin-bottom: 2rem;
-  font-size: 1.33rem;
-  cursor: pointer;
-}
-
-.home__social-icon:hover {
-  color: var(--first-color);
+  margin: 30px 5px;
 }
 
 /*----- MEDIA QUERIES -----*/
@@ -273,18 +267,7 @@ img {
   .home__information {
     margin-top: 2rem;
   }
-  .home__social {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding-top: 8rem;
-    padding-bottom: 0;
-  }
-  .home__social-icon {
-    margin-right: 2rem;
-    margin-bottom: 0;
-  }
+
   .home__img {
     width: 553px;
     right: 5%;
@@ -321,17 +304,6 @@ img {
   background-color: var(--first-color);
   left: 66.6%;
 }
-.social-iconlol{
-  position: absolute;
-  right: 5%;
-  bottom: 5%;
-  font-size: 1.4rem;
-}
-.social-iconlol .imglol{
-  width: 30px;
-  display: block;
-  margin: 25px 5px;
-}
 
 /*lol*/
 
@@ -356,4 +328,11 @@ img {
 .text-box .row span
 {
   font-family: 'Righteous', cursive;
+}
+
+.home__img{
+  display: flex;
+  cursor: pointer;
+  margin-bottom: -40%;
+  margin-left: 50%;
 }
